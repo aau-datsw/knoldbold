@@ -1,0 +1,11 @@
+version: 2
+
+jobs:
+  build:
+    working_directory: ~/knoldbold
+    docker:
+      - image: circleci/ruby:2.5.1-node
+
+    steps:
+      - checkout
+      - run: echo 'write specs'
